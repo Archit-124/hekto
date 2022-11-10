@@ -201,8 +201,8 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 512px;
-  width: 534px;
+  height: 69%;
+  width: 50%;
 }
 .cu-form {
   height: 335px;
@@ -212,13 +212,20 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.cu-name {
+  width: 50%;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 95% !important;
+}
 .cu-name input {
-  height: 45px;
   width: 255px;
 }
+.cu-subject {
+  width: 100%;
+}
 .cu-subject input {
-  height: 45px;
-  width: 534px;
+  width: 100%;
 }
 .cu-name1 input {
   margin-right: 8px;
@@ -241,9 +248,12 @@
   color: #8a8fb9;
   margin: 27px 0;
 }
+.cu-msg {
+  width: 100%;
+}
 .cu-msg textarea {
   height: 138px;
-  width: 533px;
+  width: 100%;
 }
 .cu-form-btn button {
   height: 44px;
@@ -258,4 +268,57 @@
   background: white;
   border: solid 2px #fb2e86;
   cursor: pointer;
+}
+
+/*  */
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100% !important;
+}
+
+@media (min-width: 1012px) and (max-width: 1306px) {
+  .parent-child-cu-sec2 {
+    width: 94%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1012px) {
+  .parent-child-cu-sec2 {
+    width: 94%;
+  }
+  .cu-sec2-big-img {
+    width: 44%;
+    margin-left: 55px;
+    height: 50%;
+  }
+  .cu-sec2-alltext {
+    width: 39%;
+  }
+}
+@media (min-width: 839px) and (max-width: 993px) {
+  .parent-child-cu-sec2 {
+    width: 94%;
+  }
+  .cu-sec2-big-img {
+    width: 44%;
+    margin-left: 55px;
+    height: 50%;
+  }
+  .cu-sec2-alltext {
+    width: 39%;
+  }
+}
+@media (min-width: 0px) and (max-width: 839px) {
+  .parent-child-cu-sec2 {
+    width: 94%;
+  }
+  .cu-sec2-big-img {
+    width: 44%;
+    margin-left: 55px;
+    height: 50%;
+  }
+  .cu-sec2-alltext {
+    width: 39%;
+  }
+  .contactUs-main {
+    width: 913px;
+  }
 }

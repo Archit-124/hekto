@@ -2,7 +2,7 @@ import React from "react";
 import "./ContactUs.css";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
-
+import { TextField, TextareaAutosize } from "@mui/material";
 const ContactUs = () => {
   return (
     <div>
@@ -76,19 +76,18 @@ const ContactUs = () => {
                   </p>
                   <form className="cu-form">
                     <div className="cu-name cu-name1">
-                      <input type="text" placeholder="Your Name"></input>
+                      <TextField label="Your Name" />
                     </div>
                     <div className="cu-name cu-email">
-                      <input type="email" placeholder="Your Email"></input>
+                      <TextField label="Your Email" />
                     </div>
                     <div className="cu-subject">
-                      <input type="text" placeholder="Subject"></input>
+                      <TextField label="Subject" />
                     </div>
                     <div className="cu-msg">
-                      <textarea
+                      <TextareaAutosize
                         required
-                        rows="4"
-                        cols="30"
+                        minRows={6}
                         name="comment"
                         form="usrform"
                         placeholder="Type Your Message"
