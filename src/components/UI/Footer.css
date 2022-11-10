@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer-container {
+  height: 100%;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  height: 408px;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+.main {
+  height: 479px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeffb;
+}
+.last {
+  height: 57px;
+  width: 100%;
+
+  align-items: center;
+  background-color: #e7e4f8;
+}
+.child-main {
+  margin: 0px 27px;
+  height: 248px;
+  width: 190px;
+  line-height: 2;
+  text-align: left;
+}
+.child-main div {
+  font-size: 14px;
+}
+.child-main h3 {
+  margin-bottom: 18px;
+}
+.hekto {
+  display: flex;
+  flex-direction: column;
+  width: 354px;
+}
+.child-hekto {
+  height: 33px;
+  width: 300px;
+}
+.child-hekto button {
+  height: 30px;
+  width: 90px;
+  border: none;
+  background-color: #fb2e86;
+  color: white;
+}
+.child-hekto input {
+  height: 30px;
+  border: none;
+  width: 200px;
+}
+.hekto h3 {
+  font-size: 33px;
+}
+
+.last {
+  display: flex;
+  justify-content: space-around;
+}
+.sub-last {
+  display: flex;
+}
+.fb,
+.insta,
+.twt {
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.fb {
+  background: url("../images/fb.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.insta {
+  background: url("../images/insta.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.twt {
+  background: url("../images/twt.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}

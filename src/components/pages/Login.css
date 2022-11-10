@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.login-main {
+  height: 100%;
+  width: 100%;
+}
+.login {
+  height: 1509px;
+  width: 100%;
+}
+/* Section 1  */
+
+.lo-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-lo-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  width: 65%;
+  /* background-color: greenyellow; */
+  flex-direction: column;
+}
+.lo-title1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.lo-sec1-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.lo-sec1-pages div {
+  margin: 0 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.lo-sec1-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 2  */
+
+.lo-sec2 {
+  height: 548px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-lo-sec2 {
+  height: 474px;
+  width: 544px;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: black; */
+}
+.lo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lo-form input {
+  height: 52px;
+  width: 414px;
+  font-size: medium;
+  margin: 15px 0;
+  padding: 0 9px;
+}
+
+.child-lo-sec2 h2 {
+  font-family: "Josefin Sans";
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.child-lo-sec2 button {
+  height: 47px;
+  width: 432px;
+  background: #fb2e86;
+  border-radius: 3px;
+  color: white;
+  border: none;
+}
+.child-lo-sec2 button:hover {
+  cursor: pointer;
+  background: white;
+  cursor: pointer;
+  color: #fb2e86;
+  border: solid 2px #fb2e86;
+}
+.child-lo-sec2 p,
+.lo-sec2-lasttext {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #9096b2;
+  margin-bottom: 10px;
+}
+.lo-fp {
+  text-align: left;
+  width: 100%;
+}
+.lo-sec2-lasttext {
+  margin-top: 20px;
+}
+
+/* Section 3  */
+
+.lo-sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  width: 100%;
+  /* background-color: greenyellow; */
+}
+.lo-sec3-img {
+  background: url("../images/loginpage/lastimg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93px;
+  width: 904px;
+}

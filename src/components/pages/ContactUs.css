@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contactUs-main {
+  height: 100%;
+  width: 100%;
+}
+.contactUs {
+  height: 2069px;
+  width: 100%;
+}
+
+/* Section 1  */
+
+.cu-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-cu-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  width: 65%;
+  /* background-color: greenyellow; */
+  flex-direction: column;
+}
+.cu-title1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.cu-sec1-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.cu-sec1-pages div {
+  margin: 0 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.cu-sec1-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 2 */
+
+.cu-sec2 {
+  height: 1372px;
+  width: 100%;
+  /* background-color: #8278dc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent-child-cu-sec2 {
+  /* background-color: #f6f5ff; */
+  height: 1197px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.child1-cu-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.child-child1-cu-sec2 {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 10px;
+  /* background-color: #696b9c; */
+}
+
+.child-child1-cu-sec2 h2 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 48px;
+  color: #151875;
+  margin-bottom: 20px;
+}
+.child-child1-cu-sec2 p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8a8fb9;
+}
+.cu-dots-img1 {
+  background: url("../images/cu-sec2imgs/dots1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 103px;
+  margin-top: 23px;
+}
+.child-child1-cu-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cu-parent-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 150px;
+  width: 500px;
+  /* background-color: yellowgreen; */
+  flex-wrap: wrap;
+}
+.child-cu-parent-cards {
+  height: 57px;
+  width: 238px;
+  /* background-color: #f6f5ff; */
+  margin: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cu-sec2-blue-img {
+  background: url("../images/cu-sec2imgs/blue.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+  margin-right: 14px;
+}
+.cu-sec2-pink-img {
+  background: url("../images/cu-sec2imgs/pink.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+  margin-right: 14px;
+}
+.cu-sec2-orange-img {
+  background: url("../images/cu-sec2imgs/orange.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+  margin-right: 14px;
+}
+.cu-sec2-green-img {
+  background: url("../images/cu-sec2imgs/green.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
+  margin-right: 14px;
+}
+.child2-cu-sec2 {
+  height: 60%;
+  width: 100%;
+  /* background-color: rgb(174, 230, 89); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cu-sec2-alltext {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  /* background-color: #f6f5ff; */
+  flex-direction: column;
+}
+.cu-sec2-big-img {
+  background: url("../images/cu-sec2imgs/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 512px;
+  width: 534px;
+}
+.cu-form {
+  height: 335px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cu-name input {
+  height: 45px;
+  width: 255px;
+}
+.cu-subject input {
+  height: 45px;
+  width: 534px;
+}
+.cu-name1 input {
+  margin-right: 8px;
+}
+.cu-email input {
+  margin-left: 8px;
+}
+.cu-sec2-alltext h2 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 48px;
+  color: #151875;
+}
+.cu-sec2-alltext p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8a8fb9;
+  margin: 27px 0;
+}
+.cu-msg textarea {
+  height: 138px;
+  width: 533px;
+}
+.cu-form-btn button {
+  height: 44px;
+  width: 157px;
+  color: white;
+  background: #fb2e86;
+  border-radius: 3px;
+  border: none;
+}
+.cu-form-btn button:hover {
+  color: #fb2e86;
+  background: white;
+  border: solid 2px #fb2e86;
+  cursor: pointer;
+}

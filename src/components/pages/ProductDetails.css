@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainProduct {
+  width: 1549px;
+  height: 100%;
+}
+.product-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 2885px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+}
+.pc-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pd-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-pc-sec1 {
+  height: 100px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.pd-pages div {
+  margin-right: 17px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.pd-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+.child-pc-sec1 h1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.pc-sec2 {
+  height: 700px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc-sec2-card1 {
+  height: 592px;
+  width: 70%;
+  /* background-color: cyan; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pd-parent-imgs {
+  height: 100%;
+  width: 50%;
+  /* background-color: whitesmoke; */
+  margin: 0 3px;
+}
+.pd-parent-texts {
+  /* background-color: whitesmoke; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.child-pd-parent-texts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: initial;
+  height: 90%;
+  width: 87%;
+  /* background-color: yellowgreen; */
+  margin-left: 16px;
+}
+.pac2 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #0d134e;
+}
+.stars2-img {
+  background: url("../images/pd-Sec2imgs/stars.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 69px;
+}
+.parent-stars2-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no22 {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #151875;
+}
+.pd-price1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pd-dollar1 {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #151875;
+  margin-right: 6px;
+}
+.pd-dollar2 {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+  text-transform: capitalize;
+  color: #fb2e86;
+}
+.pd-color {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin: 10px 0;
+  color: #0d134e;
+}
+.pd-lorem1 {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  color: #a9acc6;
+}
+.pd-heart-img {
+  background: url("../images/pd-Sec2imgs/heart.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+}
+.parent-pd-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.pd-btn1 {
+  height: 46px;
+  width: 143px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fb2e86;
+  color: white;
+}
+.pd-btn1:hover {
+  background-color: white;
+  color: #fb2e86;
+  cursor: pointer;
+}
+.pd-cate {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  color: #151875;
+}
+.pd-tags {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  color: #151875;
+  margin: 10px 0;
+}
+.pd-share {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  color: #151875;
+  margin-right: 10px;
+}
+.parent-socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pd-fb-img {
+  background: url("../images/pd-Sec2imgs/fb.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+}
+.pd-insta-img {
+  background: url("../images/pd-Sec2imgs/insta.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+}
+.pd-twt-img {
+  background: url("../images/pd-Sec2imgs/twt.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+}
+.parent-pd-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Images  */
+.pd-parent-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pd-main-img {
+  background: url("../images/pd-Sec2imgs/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 487px;
+  width: 375px;
+  border-radius: 3px;
+}
+.pd-sub-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 17px;
+  width: 40%;
+  height: 85%;
+}
+.pd-subimg1 {
+  background: url("../images/pd-Sec2imgs/img2.png");
+}
+.pd-subimg2 {
+  background: url("../images/pd-Sec2imgs/img3.png");
+}
+.pd-subimg3 {
+  background: url("../images/pd-Sec2imgs/img4.png");
+}
+.pd-subimg1,
+.pd-subimg2,
+.pd-subimg3 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32%;
+  width: 72%;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+/* Section 3  */
+.pc-sec3 {
+  height: 456px;
+  width: 100%;
+  /* background-color: #f9f8fe; */
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parent-pc-sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 81%;
+  width: 66%;
+  /* background-color: #ab5e7f; */
+  flex-direction: column;
+  text-align: left;
+}
+.child-pc-sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-pc-sec3 div {
+  margin-right: 40px;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  line-height: 28px;
+  color: #151875;
+}
+.child-pc-sec3 div:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.pc-sec3-text1 {
+  margin-top: 40px;
+}
+.pc-sec3-text1 h4 {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  line-height: 26px;
+  color: #151875;
+}
+.pc-sec3-text1 div {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 29px;
+  color: #a9acc6;
+}
+.pd-moredetails h4 {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  line-height: 26px;
+  color: #151875;
+  height: 20%;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.pd-allpara {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+}
+.pd-allpara li {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 12px;
+  color: #a9acc6;
+  height: 25%;
+  width: 100%;
+}
+.pd-moredetails {
+  margin-top: 28px;
+  width: 100%;
+  margin-top: 28px;
+  height: 181px;
+}
+
+/* section 4th  */
+
+.pc-sec4 {
+  height: 649px;
+  width: 100%;
+  /* background-color: #a9acc6; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-pc-sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.pd-sec4-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.pd-sec4-card {
+  width: 25%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  margin: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+.pd-sec4-card-img1 {
+  background: url("../images/pd-sec4img/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 340px; */
+  height: 100%;
+  width: 100%;
+}
+.mfw {
+  height: 15%;
+  width: 95%;
+}
+.child-mfw {
+  /* margin: 5px 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.pd-sec4-star-img {
+  background: url("../images/pd-Sec2imgs/stars.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 66px;
+}
+.pd-sec4-card-img2 {
+  background: url("../images/pd-sec4img/img2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 340px; */
+  height: 100%;
+  width: 100%;
+}
+.pd-sec4-card-img3 {
+  background: url("../images/pd-sec4img/img3.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 340px; */
+  height: 100%;
+  width: 100%;
+}
+.pd-sec4-card-img4 {
+  background: url("../images/pd-sec4img/img4.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 340px; */
+  height: 100%;
+  width: 100%;
+}
+.pc-sec4-title {
+  height: 61px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 23px;
+  margin-left: 17px;
+}
+.pc-sec4-title div {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #101750;
+}
+.child-child-mfw {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 19px;
+  color: #151875;
+}
+.pd-sec4-dollar2 {
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 15px;
+  color: #151875;
+}
+.pc-sec5 {
+  height: 400px;
+  width: 100%;
+  /* background-color: #a9acc6; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc-sec5-img {
+  background: url("../images/pd-sec5mg/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93px;
+  width: 904px;
+}
+
+@media (min-width: 2105px) and (max-width: 2720px) {
+  .mainProduct {
+    width: 2671px;
+  }
+}
+@media (min-width: 1568px) and (max-width: 2105px) {
+  .mainProduct {
+    width: 1963px;
+  }
+}

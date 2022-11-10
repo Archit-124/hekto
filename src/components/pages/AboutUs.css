@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.aboutus-main {
+  height: 100%;
+  width: 100%;
+}
+.aboutus {
+  height: 2185px;
+  width: 100%;
+}
+
+/* Section 1 */
+.au-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-au-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  width: 65%;
+  /* background-color: greenyellow; */
+  flex-direction: column;
+}
+.au-title1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.au-sec1-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.au-sec1-pages div {
+  margin: 0 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.au-sec1-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+/* Section 2  */
+.au-sec2 {
+  height: 595px;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child1-au-sec2 {
+  background: url("../images/au-sec2img/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 409px;
+  width: 570px;
+}
+.child2-au-sec2 {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 23px;
+}
+.child2-au-sec2 h2 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 48px;
+  color: #151875;
+}
+.child2-au-sec2 p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8a8fb9;
+  margin-top: 12px;
+}
+.child2-au-sec2 button {
+  height: 44px;
+  width: 145px;
+  background: #fb2e86;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  margin-top: 39px;
+}
+.child2-au-sec2 button:hover {
+  background: white;
+  border: solid 2px #fb2e86;
+  color: #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 3 */
+.au-sec3 {
+  height: 375px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parent-cards3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card3 {
+  width: 270px;
+  height: 320px;
+  /* background-color: blanchedalmond; */
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.au-sec3-img1 {
+  background: url("../images/sec4icons/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+}
+.au-sec3-img2 {
+  background: url("../images/sec4icons/img2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+}
+.au-sec3-img3 {
+  background: url("../images/sec4icons/img3.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+}
+.au-sec3-img4 {
+  background: url("../images/sec4icons/img4.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 65px;
+}
+.support3 {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  line-height: 26px;
+  color: #151875;
+  margin: 15px 0;
+}
+.loremip3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(26, 11, 91, 0.3);
+}
+.au-sec3 h1 {
+  font-family: "Josefin Sans";
+  font-size: 42px;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* Section 4  */
+.au-sec4 {
+  height: 503px;
+  width: 100%;
+  background-color: #fbfbff;
+  /* background-color: #8a8ad4; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-au-sec4 {
+  /* background-color: #d889ab; */
+  height: 500px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parent-au-sec4-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 204px;
+}
+.au-sec4-img1 {
+  background: url("../images/au-sec2img/sec4-img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+.au-sec4-img2 {
+  background: url("../images/au-sec2img/sec4-img2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 59px;
+  width: 55px;
+  margin: 0px 9px;
+  margin-bottom: 14px;
+}
+.au-sec4-img3 {
+  background: url("../images/au-sec2img/sec4-img3.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+.selina h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+.selina p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 26px;
+  color: #8a8fb9;
+}
+.au-sec4-lorem {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #8a8fb9;
+}
+.au-dots-img {
+  background: url("../images/au-sec2img/dots.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 3px;
+  width: 73px;
+  margin-top: 23px;
+}
+.child-au-sec4 h1 {
+  font-family: "Josefin Sans";
+  font-size: 42px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 39px;
+}
+.selina {
+  margin: 17px 0;
+}

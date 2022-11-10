@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.error-main {
+  height: 100%;
+  width: 100%;
+}
+.err {
+  height: 1764px;
+  width: 100%;
+}
+
+/* Section 1  */
+
+.err-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-err-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  width: 65%;
+  /* background-color: greenyellow; */
+  flex-direction: column;
+}
+.err-title1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.err-sec1-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.err-sec1-pages div {
+  margin: 0 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.err-sec1-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 2  */
+.err-sec2 {
+  height: 792px;
+  width: 100%;
+  /* background-color: rgb(128, 219, 128); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-err-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  /* background-color: yellowgreen; */
+}
+.err-img {
+  background: url("../images/err-imgs/img1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 644.43px;
+  width: 913px;
+}
+.child-err-sec2 button {
+  height: 44px;
+  width: 165px;
+  background: #fb2e86;
+  border-radius: 3px;
+  color: white;
+  border: none;
+}
+.child-err-sec2 button:hover {
+  background: white;
+  color: #fb2e86;
+  border: solid 2px #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 3  */
+.err-sec3 {
+  height: 300px;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.err-sec3-img {
+  background: url("../images/err-imgs/img2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 128px;
+  width: 1246px;
+}

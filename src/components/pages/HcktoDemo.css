@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.HectoDemo-main {
+  height: 100%;
+  width: 100%;
+}
+.hectoDemo {
+  height: 2000px;
+  width: 100%;
+}
+
+/* Section 1  */
+
+.hd-sec1 {
+  height: 286px;
+  width: 100%;
+  background: #f6f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-hd-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  width: 65%;
+  /* background-color: greenyellow; */
+  flex-direction: column;
+}
+.hd-title1 {
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #101750;
+}
+.hd-sec1-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.hd-sec1-pages div {
+  margin: 0 5px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.hd-sec1-pages div:hover {
+  color: #fb2e86;
+  cursor: pointer;
+}
+
+/* Section 2   */
+
+.hd-sec2 {
+  height: 1228px;
+  width: 100%;
+  /* background-color: rgb(218, 156, 80); */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-hd-sec2 {
+  height: 100%;
+  width: 70%;
+  /* background-color: rgb(118, 222, 187); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+/* Header  */
+.child-hd-header h2 {
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  line-height: 28px;
+  color: #1d3178;
+}
+.child-hd-header p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1d3178;
+  margin-top: 5px;
+}
+.child-hd-header {
+  height: 9%;
+  width: 100%;
+  /* background-color: rgb(215, 64, 89); */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+/* Below  */
+.child-hd-below {
+  height: 80%;
+  width: 100%;
+  /* background-color: rgb(99, 215, 64); */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.child-hd-below-left {
+  padding: 19px;
+  height: 95%;
+  width: 60%;
+  /* background-color: rgb(153, 78, 223); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.child-hd-below-left-CI {
+  height: 22%;
+  width: 100%;
+  /* background-color: rgb(148 105 48); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.child-hd-below-left-CI h3 {
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #1d3178;
+}
+.child-hd-below-left-CI-para {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #c1c8e1;
+}
+.child-hd-below-left-para1 {
+  margin-top: 23px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #c1c8e1;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hd-br {
+  border-top: 2px solid #bfc6e0;
+  width: 100%;
+  height: 0.1px;
+  margin: 10px 0;
+}
+.child-hd-below-left li {
+  list-style: url("../images//HectoDemo-images/li.png");
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #8a91ab;
+  width: 100%;
+  height: 5%;
+  text-align: left;
+  margin: 25px 0;
+}
+.child1-hd-below-left-CI {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+}
+
+/* Shipping Addreas */
+
+.child-hd-below-left-SA {
+  height: 60%;
+  width: 100%;
+  /* background-color: rgb(150, 65, 79); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.child-hd-below-left-SA-allInput {
+  flex-wrap: wrap;
+  height: 80%;
+  width: 100%;
+  /* background-color: #8a91ab; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-hd-below-left-SA-name {
+  height: 50px;
+  width: 46%;
+  margin-right: 20px !important;
+}
+.child-hd-below-left-SA-address {
+  height: 50px;
+  width: 100%;
+}
+.child-hd-below-left-SA h4 {
+  height: 8%;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #1d3178;
+}
+.child-hd-below-left-btn1 {
+  height: 44px;
+  width: 182px;
+  color: white;
+  background-color: #fb2e86;
+  border: none;
+}
+.child-hd-below-left-btn1:hover {
+  cursor: pointer;
+  color: #fb2e86;
+  background-color: white;
+  border: 2px solid #fb2e86;
+}
+.child-hd-below-left-Pbutton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50px;
+  width: 100%;
+}
+.child-hd-below-left-SA-phn {
+  width: 100%;
+  margin-top: 24px !important;
+}
+
+/* right  */
+
+.child-hd-below-right {
+  height: 100%;
+  width: 37%;
+  padding: 19px;
+}
+
+.child-hd-below-right-card {
+  width: 100%;
+  height: 98px;
+  /* background-color: #bfc6e0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.child-hd-below-right-CardChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.child-hd-below-right-img1 {
+  background: url("../images/HectoDemo-images/img1.png");
+  height: 87px;
+  width: 83px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child-hd-below-right-img2 {
+  background: url("../images/HectoDemo-images/img2.png");
+  height: 87px;
+  width: 83px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child-hd-below-right-img3 {
+  background: url("../images/HectoDemo-images/img3.png");
+  height: 87px;
+  width: 83px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child-hd-below-right-img4 {
+  background: url("../images/HectoDemo-images/img4.png");
+  height: 87px;
+  width: 83px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child-hd-below-right-img5 {
+  background: url("../images/HectoDemo-images/img5.png");
+  height: 87px;
+  width: 83px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.child-hd-below-right-udc {
+  margin-left: 10px;
+}
+.child-hd-below-right-udc p {
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  line-height: 14px;
+  color: #a1a8c1;
+  margin-top: 5px;
+}
+.child-hd-below-right-udc h4 {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.child-hd-below-right-card-dollar {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  line-height: 16px;
+  color: #15245e;
+}
+
+/* absdbahdba */
+
+.child-right-hd-sec2 {
+  height: 370px;
+  width: 100%;
+  /* background-color: rgb(191, 93, 93); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.child-right-hd-form {
+  height: 284px;
+  width: 84%;
+  background: #f4f4fc;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 27px;
+}
+.child-right-hd-form-totalsss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+}
+.child-right-hd-form-totalsss h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1d3178;
+}
+.child-right-hd-form-totalsss p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #15245e;
+}
+.child-right-hd-form li {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8a91ab;
+
+  list-style: url("../images/ShoppingCart-images/li.png");
+
+  margin: 30px 0;
+  text-align: left;
+  width: 100%;
+}
+.child-right-hd-form-btn1 {
+  background: #19d16f;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  color: white;
+}
+.child-right-hd-form-btn1:hover {
+  background: white;
+  border: 2px solid #19d16f;
+  color: #19d16f;
+  cursor: pointer;
+}
+.child-right-hd-form-totalsss p {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  line-height: 16px;
+  color: #c5cbe3;
+}
+.child-right-hd-form-btn2 {
+  margin-top: 30px;
+  height: 41px;
+  width: 179px;
+  background: #fb2e86;
+  border: none;
+  color: white;
+}
+.child-right-hd-form-btn2:hover {
+  background: white;
+  color: #fb2e86;
+  border: 2px solid #fb2e86;
+  cursor: pointer;
+}
