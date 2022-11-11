@@ -386,3 +386,23 @@
   height: 93px;
   width: 904px;
 }
+
+@media (min-width: 818px) and (max-width: 1197px) {
+  .sl-sec2-heading {
+    margin-right: 9px;
+  }
+  .child-sl-sec2 {
+    width: 96%;
+  }
+}
+@media (min-width: 0px) and (max-width: 818px) {
+  .sl-sec2-heading {
+    margin-right: 9px;
+  }
+  .child-sl-sec2 {
+    width: 96%;
+  }
+  .sl-sec2-views input {
+    width: 66px;
+  }
+}
