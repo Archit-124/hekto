@@ -9,6 +9,7 @@ import ShopList from "../pages/Shoplist";
 import BlogPage from "../pages/BlogPage";
 import Faq from "../pages/Faq";
 import Login from "../pages/Login";
+import GridDefault from "../pages/GrifDefault";
 const RoutesNav = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const RoutesNav = () => {
           <Route path="/shopList" element={<ShopList />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/gridDefault" element={<GridDefault />} />
         </Routes>
       </Router>
     </div>
