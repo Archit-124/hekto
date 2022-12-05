@@ -2,7 +2,12 @@ import React from "react";
 import "./ShopLeftSidebar.css";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
+import { useNavigate } from "react-router-dom";
+import Checkbox from "@mui/material/Checkbox";
+import { pink } from "@mui/material/colors";
 const ShopLeftSidebar = () => {
+  const navigate = useNavigate();
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <div>
       <div className="shopleftsidebar-main">
@@ -35,9 +40,12 @@ const ShopLeftSidebar = () => {
                 </div>
                 <div className="sls-sec2-views">
                   <div className="child-sls-sec2-views">View:</div>
-                  <div className="sls-sec2-views-img1"></div>
+                  <div
+                    className="sls-sec2-views-img1"
+                    onClick={() => navigate("/gridDefault")}
+                  ></div>
                   <div className="sls-sec2-views-img2"></div>
-                  <input />
+                  <input placeholder="Search" />
                 </div>
               </div>
               <div className="sls-sec2-parent-cards">
@@ -45,7 +53,17 @@ const ShopLeftSidebar = () => {
                   <div className="sls-sec2-pd">
                     <h2>Product Brand</h2>
                     <ul className="sls-pb-ul1">
-                      <li>Coaster Furniture</li>
+                      <Checkbox {...label} defaultChecked color="success" />
+                      <input
+                        type="checkbox"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                        className="input_checkbox_purple"
+                      />
+                      <label for="vehicle1"> I have a bike</label>
+                      <br />
+                      <p>Coaster Furniture</p>
                       <li>Fusion Dot High Fashion</li>
                       <li>Unique Furnitture Restor</li>
                       <li>Dream Furnitture Flipping</li>

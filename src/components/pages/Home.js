@@ -21,7 +21,7 @@ const Home = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <h1>Hekto</h1> <button>Buy now</button>
+              {/* <h1>Hekto</h1> <button>Buy now</button> */}
             </div>
             <div
               style={{

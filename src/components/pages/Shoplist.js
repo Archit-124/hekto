@@ -2,7 +2,9 @@ import React from "react";
 import "./Shoplist.css";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
+import { useNavigate } from "react-router-dom";
 const Shoplist = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="shoplist-main">
@@ -35,7 +37,10 @@ const Shoplist = () => {
                 </div>
                 <div className="sl-sec2-views">
                   <div className="child-sl-sec2-views">View:</div>
-                  <div className="sl-sec2-views-img1"></div>
+                  <div
+                    className="sl-sec2-views-img1"
+                    onClick={() => navigate("/gridDefault")}
+                  ></div>
                   <div className="sl-sec2-views-img2"></div>
                   <input />
                 </div>

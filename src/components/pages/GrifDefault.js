@@ -2,7 +2,15 @@ import React from "react";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
 import "./GridDefault.css";
+import { useNavigate } from "react-router-dom";
+import data from "../ShopGridfile.json";
+import { useState } from "react";
+
 const GrifDefault = () => {
+  const navigate = useNavigate();
+  console.log(data);
+  console.log(data.data.map((ele) => ele.title)[0]);
+  const [activeColor, setActiveColor] = useState(false);
   return (
     <div>
       <div className="gridDefault-main">
@@ -35,19 +43,43 @@ const GrifDefault = () => {
                 </div>
                 <div className="gd-sec2-views">
                   <div className="child-gd-sec2-views">View:</div>
-                  <div className="gd-sec2-views-img1"></div>
-                  <div className="gd-sec2-views-img2"></div>
-                  <input />
+                  <div
+                    className="gd-sec2-views-img1"
+                    onClick={() => navigate("/gridDefault")}
+                  ></div>
+                  <div
+                    className="gd-sec2-views-img2"
+                    onClick={() => navigate("/shopLeftSidebar")}
+                  ></div>
+                  <input placeholder="Search" type="search" />
                 </div>
               </div>
               <div className="gd-sec2-parent-cards">
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img1"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Vel elit euismod</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -55,12 +87,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img2"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Ultricies condimentum imperdiet</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -68,12 +118,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img3"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Vitae suspendisse sed</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -81,12 +149,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img4"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Sed at fermentum</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -94,12 +180,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img5"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Fusce pellentesque at</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -107,12 +211,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img6"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Vestibulum magna laoreet</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -120,12 +242,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img7"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Sollicitudin amet orci</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -133,12 +273,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img8"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Ultrices mauris sit</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -146,12 +304,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img9"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Pellentesque condimentum ac</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -159,12 +335,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img10"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Cras scelerisque velit</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -172,12 +366,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img11"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Lectus vulputate faucibus</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>
@@ -185,12 +397,30 @@ const GrifDefault = () => {
                   </div>
                 </div>
                 <div className="gd-sec2-card">
-                  <div className="child1-gd-sec2-card">
+                  <div
+                    className="child1-gd-sec2-card"
+                    style={{
+                      backgroundColor: activeColor ? activeColor : "#f6f7fb",
+                    }}
+                  >
                     <div className="child1-gd-sec2-card-img12"></div>
                   </div>
                   <div className="child2gd-sec2-card">
                     <h3>Purus risus, ut</h3>
-                    <div className="gd-sec2-parent-dots-img"></div>
+                    <div className="gd-sec2-parent-dots-img">
+                      <div
+                        className="gd-sec2-parent-dots-img1"
+                        onClick={() => setActiveColor("#de9034")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img2"
+                        onClick={() => setActiveColor("#ec42a2")}
+                      ></div>
+                      <div
+                        className="gd-sec2-parent-dots-img3"
+                        onClick={() => setActiveColor("#8568ff")}
+                      ></div>
+                    </div>
                     <div className="gd-sec2-dollars">
                       <div className="child1-gd-sec2-dollars">$26.00 </div>
                       <div className="child2-gd-sec2-dollars">$42.00 </div>

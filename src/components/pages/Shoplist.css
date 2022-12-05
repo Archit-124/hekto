@@ -124,6 +124,7 @@
   height: 12px;
   width: 12px;
   margin: 0 3px;
+  cursor: pointer;
 }
 .sl-sec2-views-img2 {
   background: url("../images/gd-sec2-imgs/icn2.png");
@@ -133,6 +134,7 @@
   height: 12px;
   width: 12px;
   margin-right: 15px;
+  cursor: pointer;
 }
 .child-sl-sec2-views {
   margin-left: 5px;
@@ -265,6 +267,7 @@
   margin-right: 10px;
   width: 225px;
   height: 33px;
+  text-align: left;
 }
 .parent-sl-dots {
   display: flex;
