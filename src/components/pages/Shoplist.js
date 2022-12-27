@@ -3,6 +3,8 @@ import "./Shoplist.css";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
 import { useNavigate } from "react-router-dom";
+import { cardsss } from "../mockdata/sl";
+
 const Shoplist = () => {
   const navigate = useNavigate();
   return (
@@ -46,195 +48,36 @@ const Shoplist = () => {
                 </div>
               </div>
               <div className="sl-sec2-parent-cards">
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img1"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Accumsan tincidunt</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
+                {cardsss.map((card) => (
+                  <div className="sl-sec2-card">
+                    <div className="sl-sec2-card-img1"></div>
+                    <div className="sl-sec2-sidetext">
+                      <div className="sl-sec2-sidetext-title">
+                        <h2>{card.title}</h2>
+                        <div className="parent-sl-dots">
+                          <div className="sl-sec2-sidetext-orangedot1"></div>
+                          <div className="sl-sec2-sidetext-pinkdot1"></div>
+                          <div className="sl-sec2-sidetext-bluedot1"></div>
+                        </div>
+                      </div>
+                      <div className="sl-sec2-card-dollars">
+                        <div className="sl-sec2-child1-dollar">
+                          {card.price}
+                        </div>
+                        <div className="sl-sec2-child2-dollar">
+                          {card.offer}
+                        </div>
+                        <div className="sl-stars"></div>
+                      </div>
+                      <p>{card.description}</p>
+                      <div className="sl-sec2-icons">
+                        <div className="sl-sec2-icons-icn1"></div>
+                        <div className="sl-sec2-icons-icn2"></div>
+                        <div className="sl-sec2-icons-icn3"></div>
                       </div>
                     </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
                   </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img2"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>In nulla</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img3"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Vel sem</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img4"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Porttitor cum</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img5"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Nunc in</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img6"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Vitae facilisis</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-sec2-card">
-                  <div className="sl-sec2-card-img7"></div>
-                  <div className="sl-sec2-sidetext">
-                    <div className="sl-sec2-sidetext-title">
-                      <h2>Curabitur lectus</h2>
-                      <div className="parent-sl-dots">
-                        <div className="sl-sec2-sidetext-orangedot1"></div>
-                        <div className="sl-sec2-sidetext-pinkdot1"></div>
-                        <div className="sl-sec2-sidetext-bluedot1"></div>
-                      </div>
-                    </div>
-                    <div className="sl-sec2-card-dollars">
-                      <div className="sl-sec2-child1-dollar">$26.00</div>
-                      <div className="sl-sec2-child2-dollar">$52.00</div>
-                      <div className="sl-stars"></div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Magna in est adipiscing in phasellus non in justo.
-                    </p>
-                    <div className="sl-sec2-icons">
-                      <div className="sl-sec2-icons-icn1"></div>
-                      <div className="sl-sec2-icons-icn2"></div>
-                      <div className="sl-sec2-icons-icn3"></div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

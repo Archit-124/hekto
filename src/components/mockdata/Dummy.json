@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "title": "Dictum morbi",
+      "brand": "Coaster Furniture",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "3",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem asdjad dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img1",
+      "categories": "Prestashop"
+    },
+    {
+      "title": "Sodales sit",
+      "brand": "Fusion Dot High Fashion",
+      "price": "$26.00 ",
+      "prev-price": "$42.99",
+      "rating-star": "4",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dsakjdbka dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img2",
+      "categories": "Magento"
+    },
+    {
+      "title": "Nibh varius",
+      "brand": "Unique Furnitture Restor",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "5",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img3",
+      "categories": "Bigcommerce"
+    },
+    {
+      "title": "Mauris quis",
+      "brand": "Dream Furnitture Flipping",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "1",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img4",
+      "categories": "osCommerce"
+    },
+    {
+      "title": "Morbi sagittis",
+      "brand": "Young Repurposed",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "3",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img5",
+      "categories": "3dcart"
+    },
+    {
+      "title": "Ultricies venenatis",
+      "brand": "Green DIY furniture",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "4",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img6",
+      "categories": "Bags"
+    },
+    {
+      "title": "Scelerisque dignissim",
+      "brand": "Green DIY furniture",
+      "price": "$26.00 ",
+      "prev-price": "$42.00",
+      "rating-star": "2",
+      "color-code": ["pink", "Orange", "yellow"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "image": "img7",
+      "categories": "Accessories"
+    }
+  ]
+}

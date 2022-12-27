@@ -7,9 +7,14 @@
   width: 100%;
 }
 .gridDefault {
-  height: 2569px;
+  /* height: 2491px; */
+  /* height: 4314px; */
   width: 100%;
 }
+
+/* .gridDefault .gd-sec1 .child-gd-sec1 .gd-title1 {
+  background-color: #3f509e;
+} */
 
 /* Section 1  */
 
@@ -61,7 +66,8 @@
 /* Section 2 */
 
 .gd-sec2 {
-  height: 1616px;
+  /* height: 3798px; */
+  /* height: 1939px; */
   width: 100%;
   /* background-color: #ebbacf; */
   display: flex;
@@ -70,18 +76,19 @@
   margin-top: 27px;
 }
 .child-gd-sec2 {
-  height: 1406px;
-  width: 82%;
+  height: auto;
+  width: 72%;
   /* background-color: antiquewhite; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
 }
 .gd-sec2-allheadings {
+  /* height: 5%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 50px;
   /* background-color: #e7e6ef; */
@@ -165,7 +172,7 @@
 }
 .gd-sec2-heading {
   text-align: left;
-  margin-right: 274px;
+  margin-right: 136px;
   height: 100%;
   align-items: flex-start;
   justify-content: center;
@@ -176,11 +183,12 @@
 /* Cards  */
 .gd-sec2-parent-cards {
   /* background-color: greenyellow; */
-  height: 95%;
+  height: 39%;
+  margin-top: 33px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .gd-sec2-card {
@@ -197,102 +205,15 @@
   justify-content: center;
   align-items: center;
 }
-.child1-gd-sec2-card-img1 {
-  background: url("../images/gd-sec2-imgs/img1.png");
+.child1-gd-sec2-card-img {
+  /* background: url("../images/gd-sec2-imgs/img1.png"); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 201px;
   width: 201px;
 }
-.child1-gd-sec2-card-img2 {
-  background: url("../images/gd-sec2-imgs/img2.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 169px;
-  width: 169px;
-}
-.child1-gd-sec2-card-img3 {
-  background: url("../images/gd-sec2-imgs/img3.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 201px;
-  width: 201px;
-}
-.child1-gd-sec2-card-img4 {
-  background: url("../images/gd-sec2-imgs/img4.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 188px;
-  width: 188px;
-}
-.child1-gd-sec2-card-img5 {
-  background: url("../images/gd-sec2-imgs/img5.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 139px;
-  width: 128px;
-}
-.child1-gd-sec2-card-img6 {
-  background: url("../images/gd-sec2-imgs/img6.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 158px;
-  width: 154px;
-}
-.child1-gd-sec2-card-img7 {
-  background: url("../images/gd-sec2-imgs/img7.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 144px;
-  width: 114px;
-}
-.child1-gd-sec2-card-img8 {
-  background: url("../images/gd-sec2-imgs/img8.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 167px;
-  width: 167px;
-}
-.child1-gd-sec2-card-img9 {
-  background: url("../images/gd-sec2-imgs/img9.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 151px;
-  width: 170px;
-}
-.child1-gd-sec2-card-img10 {
-  background: url("../images/gd-sec2-imgs/img10.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 158px;
-  width: 169px;
-}
-.child1-gd-sec2-card-img11 {
-  background: url("../images/gd-sec2-imgs/img11.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 176px;
-  width: 176px;
-}
-.child1-gd-sec2-card-img12 {
-  background: url("../images/gd-sec2-imgs/img12.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 188px;
-  width: 188px;
-}
+
 .gd-sec2-dollars,
 .child2gd-sec2-card {
   display: flex;
@@ -378,11 +299,11 @@
 
 @media (max-width: 700px) {
   .gridDefault-main {
-    width: 786px;
-    height: 842px;
+    /* width: 786px;
+    height: 842px; */
   }
   .gd-sec2 {
-    height: 2432px;
+    height: 88%;
   }
   .gd-sec2-heading {
     margin-right: 36px;
@@ -403,10 +324,10 @@
 }
 @media (max-width: 1123px) and (min-width: 700px) {
   .gd-sec2 {
-    height: 2355px;
+    /* height: 2355px; */
   }
   .gridDefault {
-    height: 3294px;
+    /* height: 3294px; */
   }
   .gd-sec2-heading {
     margin-right: 0px;

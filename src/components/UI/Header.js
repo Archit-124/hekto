@@ -13,7 +13,11 @@ const Header = () => {
         </div>
         <div className="child-header">
           <div>English</div>
-          <div>USD</div>
+          <div>
+            <Link to="/signUP" className="usd-a">
+              USD
+            </Link>
+          </div>
           <div>
             <Link className="myaccnt" to="/login">
               My Account
@@ -23,7 +27,7 @@ const Header = () => {
           <div className="img2"></div>
         </div>
       </div>
-      <navbar className="nav">
+      <div className="nav">
         <div></div>
         <div></div>
         <div className="child-nav title">Hekto</div>
@@ -31,25 +35,6 @@ const Header = () => {
           <ul>
             <li>
               <Link to="/home">Home</Link>
-              {/* <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                <InputLabel id="demo-simple-select-standard-label">
-                  Home
-                </InputLabel>
-                <Select
-                  labelId="demo-simple-select-standard-label"
-                  id="demo-simple-select-standard"
-                  value={age}
-                  onChange={handleChange}
-                  label="Age"
-                >
-                  <MenuItem value="">
-                    <em>None</em>
-                  </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </FormControl> */}
             </li>
             <li>
               <Link to="/gridDefault">Pages</Link>
@@ -74,15 +59,15 @@ const Header = () => {
             <div className="img1"></div>
           </div>
         </div>
-      </navbar>
-      <section class="top-nav">
+      </div>
+      <section className="top-nav">
         <div className="menu-hekto-title">Hekto</div>
         <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-          <div class="menu-button"></div>
+        <label className="menu-button-container" htmlFor="menu-toggle">
+          <div className="menu-button"></div>
         </label>
         {/* <div className="parent-menu"> */}
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <Link to="/home">Home</Link>
           </li>

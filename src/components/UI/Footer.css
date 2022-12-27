@@ -3,8 +3,10 @@
   padding: 0;
 }
 .footer-container {
-  height: 100%;
+  height: 475px;
+  width: 100%;
   position: relative;
+  /* display: none; */
 }
 .container {
   display: flex;
@@ -12,12 +14,12 @@
   position: absolute;
   flex-direction: column;
   bottom: 0;
-  height: 408px;
+  height: 100%;
   width: 100%;
   /* background-color: aquamarine; */
 }
 .main {
-  height: 479px;
+  height: 90%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,7 +27,7 @@
   background-color: #eeeffb;
 }
 .last {
-  height: 57px;
+  height: 10%;
   width: 100%;
 
   align-items: center;
@@ -34,7 +36,7 @@
 .child-main {
   margin: 0px 27px;
   height: 248px;
-  width: 190px;
+  width: 12%;
   line-height: 2;
   text-align: left;
 }
@@ -47,11 +49,11 @@
 .hekto {
   display: flex;
   flex-direction: column;
-  width: 354px;
+  width: 20%;
 }
 .child-hekto {
   height: 33px;
-  width: 300px;
+  width: 100%;
 }
 .child-hekto button {
   height: 30px;
@@ -63,7 +65,8 @@
 .child-hekto input {
   height: 30px;
   border: none;
-  width: 200px;
+  width: 70%;
+  padding-left: 5px;
 }
 .hekto h3 {
   font-size: 33px;
@@ -101,4 +104,65 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+}
+
+@media (min-width: 1518px) and (max-width: 1999px) {
+  .child-main {
+    height: 70%;
+    margin: 0px 14px;
+  }
+  .child-hekto {
+    height: 37px;
+  }
+  .hekto {
+    width: 33%;
+  }
+}
+@media (min-width: 929px) and (max-width: 1518px) {
+  .child-main {
+    height: 83%;
+    margin: 0px 14px;
+  }
+  .child-hekto {
+    height: 37px;
+  }
+  .hekto {
+    width: 33%;
+  }
+}
+@media (min-width: 706px) and (max-width: 929px) {
+  .child-main {
+    height: 100%;
+    margin: 0px 14px;
+  }
+  .child-hekto {
+    height: 72px;
+  }
+  .hekto {
+    width: 33%;
+  }
+}
+@media (min-width: 602px) and (max-width: 706px) {
+  .child-main {
+    height: 100%;
+    margin: 0px 14px;
+  }
+  .child-hekto {
+    height: 77px;
+  }
+  .hekto {
+    width: 33%;
+  }
+}
+@media (min-width: 0) and (max-width: 602px) {
+  .child-main {
+    height: 100%;
+    margin: 0px 14px;
+  }
+  .child-hekto {
+    height: 77px;
+  }
+  .hekto {
+    width: 33%;
+  }
 }

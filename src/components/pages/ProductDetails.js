@@ -1,8 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
 import "./ProductDetails.css";
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import ProductDetails_services from "../Service/ProductDetails_services";
+
 const ProductDetails = () => {
+  const [recievedData, userecievedData] = useState([]);
+  const { id } = useParams();
+  // const [subData, usesubData] = useState({
+  //   productId: "",
+  //   quantity: "1",
+  //   price: "",
+  //   categoryId: "",
+  // });
+  const localData = JSON.parse(localStorage.getItem("values"));
+  console.log(localData);
+
+  useEffect(() => {
+    axisData();
+  }, []);
+  const axisData = async () => {
+    await axios
+      .get(
+        `https://api-ecommerce-dev.devtomaster.com/v1/product/getProduct/${id}`
+      )
+      .then((resopnse) => {
+        console.log(resopnse);
+        const data = resopnse.data.result.product;
+        userecievedData(data);
+        // console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const handleSubmit = async () => {
+    console.log("Submit!!");
+    // await ProductDetails_services(subData)
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+    const subData = {
+      userId: localData._id,
+      cartItems: {
+        productId: recievedData._id,
+        quantity: 1,
+        price: recievedData.price,
+        categoryId: recievedData.category,
+      },
+    };
+    console.log(subData);
+
+    await axios
+      .post(
+        "https://api-ecommerce-dev.devtomaster.com/v1/cart/addToCart",
+        subData
+      )
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="mainProduct">
       <Header></Header>
@@ -25,29 +90,32 @@ const ProductDetails = () => {
                 <div className="pd-subimg2"></div>
                 <div className="pd-subimg3"></div>
               </div>
-              <div className="pd-main-img"></div>
+              {recievedData.images?.map((imgs) => (
+                <img src={imgs.img} alt="Loading" className="pd-main-img"></img>
+              ))}
             </div>
             <div className="pd-parent-texts">
               <div className="child-pd-parent-texts">
-                <div className="pac2">Playwood arm chair</div>
+                <div className="pac2">{recievedData.productName}</div>
                 <div className="parent-stars2-img">
                   <div className="stars2-img"></div>
                   <div className="no22">(22)</div>
                 </div>
                 <div className="pd-price1">
-                  <div className="pd-dollar1">$32.00</div>
-                  <div className="pd-dollar2">$32.00</div>
+                  <div className="pd-dollar1">${recievedData.price}</div>
+                  <div className="pd-dollar2">${recievedData.offer}</div>
                 </div>
                 <div className="pd-color">Color</div>
-                <div className="pd-lorem1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris tellus porttitor purus, et volutpat sit.
-                </div>
+                <div className="pd-lorem1">{recievedData.description}</div>
                 <div className="parent-pd-btn">
-                  <button className="pd-btn1">Add To Cart</button>
+                  <button className="pd-btn1" onClick={handleSubmit}>
+                    Add To Cart
+                  </button>
                   <div className="pd-heart-img"></div>
                 </div>
-                <div className="pd-cate">Categories:</div>
+                <div className="pd-cate">
+                  Categories:{recievedData.category}
+                </div>
                 <div className="pd-tags">Tags</div>
                 <div className="parent-pd-share">
                   <div className="pd-share">Share</div>
@@ -64,13 +132,13 @@ const ProductDetails = () => {
         <div className="pc-sec3">
           <div className="parent-pc-sec3">
             <div className="child-pc-sec3">
-              <div>Description</div>
+              <div>Descriptiom</div>
               <div>Additional Info</div>
               <div>Reviews</div>
               <div>Video</div>
             </div>
             <div className="pc-sec3-text1">
-              <h4>Varius tempor.</h4>
+              <h4>{}</h4>
               <div>
                 Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
                 ornare faucibus vel sed et eleifend habitasse amet. Montes,

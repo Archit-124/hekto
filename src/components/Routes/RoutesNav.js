@@ -10,6 +10,8 @@ import Faq from "../pages/Faq";
 import Login from "../pages/Login";
 import GridDefault from "../pages/GrifDefault";
 import ShopLeftSidebar from "../pages/ShopLeftSidebar";
+import SignUp from "../pages/SignUp";
+import ShoppingCart from "../pages/ShoppingCart";
 const RoutesNav = () => {
   return (
     <div>
@@ -19,13 +21,19 @@ const RoutesNav = () => {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/aboutUs" element={<AboutUs />} />
           <Route exact path="/contactUs" element={<ContactUs />} />
-          <Route exact path="/productDetails" element={<ProductDetails />} />
+          <Route
+            exact
+            path="/productDetails/:id"
+            element={<ProductDetails />}
+          />
           <Route exact path="/blogPage" element={<BlogPage />} />
           <Route path="/shopList" element={<ShopList />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/login" element={<Login />} />
           <Route path="/gridDefault" element={<GridDefault />} />
           <Route path="/shopLeftSidebar" element={<ShopLeftSidebar />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/shoppingCart" element={<ShoppingCart />} />
         </Routes>
       </Router>
     </div>

@@ -1,0 +1,47 @@
+const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+
+    setNameError(false);
+    setEmailError(false);
+
+    if (name == "") {
+      setNameError(true);
+    }
+    if (email == "") {
+      setEmailError(true);
+    }
+    if (name && email) {
+      console.log(name);
+      console.log(email);
+    }
+  };
+
+{/* <form noValidate autoComplete="off" onClick={handleSubmit}>
+              <TextField
+                onChange={(e) => setName(e.target.value)}
+                id="outlined-basic"
+                label="Name"
+                variant="outlined"
+                required
+                error={nameError}
+              />
+              <TextField
+                onChange={(e) => setEmail(e.target.value)}
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+                required
+                error={emailError}
+              />
+              <TextField
+                id="outlined-basic"
+                label="Password"
+                variant="outlined"
+                required
+              />
+              <Button variant="contained">Submit</Button>
+            </form> */}

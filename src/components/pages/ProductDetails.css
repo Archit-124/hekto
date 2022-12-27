@@ -1,9 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .mainProduct {
-  width: 1549px;
+  width: 100%;
   height: 100%;
 }
 .product-container {
@@ -169,6 +165,7 @@
   background-repeat: no-repeat;
   height: 18px;
   width: 18px;
+  cursor: pointer;
 }
 .parent-pd-btn {
   display: flex;
@@ -183,11 +180,13 @@
   border-radius: 4px;
   background-color: #fb2e86;
   color: white;
+  margin-right: 10px;
 }
 .pd-btn1:hover {
   background-color: white;
   color: #fb2e86;
   cursor: pointer;
+  border: 2px solid #fb2e86;
 }
 .pd-cate {
   font-family: "Josefin Sans";
@@ -291,7 +290,7 @@
 
 /* Section 3  */
 .pc-sec3 {
-  height: 456px;
+  height: 524px;
   width: 100%;
   /* background-color: #f9f8fe; */
   /* background-color: gray; */
@@ -311,8 +310,10 @@
   text-align: left;
 }
 .child-pc-sec3 {
+  width: 100%;
+  height: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .child-pc-sec3 div {
@@ -328,6 +329,7 @@
 }
 .pc-sec3-text1 {
   margin-top: 40px;
+  height: 43%;
 }
 .pc-sec3-text1 h4 {
   font-family: "Josefin Sans";
@@ -367,6 +369,7 @@
   width: 100%;
 }
 .pd-moredetails {
+  height: 43%;
   margin-top: 28px;
   width: 100%;
   margin-top: 28px;
@@ -510,13 +513,13 @@
   width: 904px;
 }
 
-@media (min-width: 2105px) and (max-width: 2720px) {
-  .mainProduct {
-    width: 2671px;
+@media (min-width: 608px) and (max-width: 783px) {
+  .parent-pc-sec3 {
+    width: 84%;
   }
 }
-@media (min-width: 1568px) and (max-width: 2105px) {
-  .mainProduct {
-    width: 1963px;
+@media (min-width: 442px) and (max-width: 608px) {
+  .parent-pc-sec3 {
+    width: 84%;
   }
 }
