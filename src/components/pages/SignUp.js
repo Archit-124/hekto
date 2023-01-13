@@ -50,7 +50,7 @@ const SignUp = () => {
     await signup(storedValues)
       .then((response) => {
         console.log("Success:", response);
-        localStorage.setItem("values", JSON.stringify(response.result));
+        // localStorage.setItem("values", JSON.stringify(response.result));
         setSuccessIsVisible(!successIsVissible);
       })
       .catch((error) => {

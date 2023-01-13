@@ -24,7 +24,9 @@ const Header = () => {
             </Link>
           </div>
           <div>Wishlist</div>
-          <div className="img2"></div>
+          <Link to="/shoppingCart">
+            <div className="img2"></div>
+          </Link>
         </div>
       </div>
       <div className="nav">

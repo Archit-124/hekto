@@ -3,51 +3,48 @@ import Header from "../UI/Header";
 import Footer from "../UI/Footer";
 import "./ProductDetails.css";
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import ProductDetails_services from "../Service/ProductDetails_services";
+import { useParams, useNavigate } from "react-router-dom";
+import ProductDetailsServices from "../Service/ProductDetails_services";
+// import Product_Details_idS from "../Service/ProductDetails_services";
+
+const { ProductDetails_services, get_Product_Byid } = ProductDetailsServices;
 
 const ProductDetails = () => {
   const [recievedData, userecievedData] = useState([]);
   const { id } = useParams();
-  // const [subData, usesubData] = useState({
-  //   productId: "",
-  //   quantity: "1",
-  //   price: "",
-  //   categoryId: "",
-  // });
-  const localData = JSON.parse(localStorage.getItem("values"));
-  console.log(localData);
+  const navigate = useNavigate();
+
+  const access_Token = localStorage.getItem("access_token");
+
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    axisData();
-  }, []);
-  const axisData = async () => {
-    await axios
-      .get(
-        `https://api-ecommerce-dev.devtomaster.com/v1/product/getProduct/${id}`
-      )
-      .then((resopnse) => {
-        console.log(resopnse);
-        const data = resopnse.data.result.product;
-        userecievedData(data);
-        // console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+    const fetchData = async () => {
+      try {
+        const response = await get_Product_Byid(id);
+        console.log(response);
+        const result = response.result.product;
+        // console.log(result);
+        setData(result);
+        userecievedData(result);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, [id]);
+
+  // console.log(recievedData);
+  // console.log(recievedData?.images?.map((imgssss) => imgssss?.img));
+
   const handleSubmit = async () => {
     console.log("Submit!!");
-    // await ProductDetails_services(subData)
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
     const subData = {
-      userId: localData._id,
+      // access_Token: accessToken,
+      // userId: accessToken,
       cartItems: {
+        accessToken: access_Token,
         productId: recievedData._id,
         quantity: 1,
         price: recievedData.price,
@@ -55,18 +52,9 @@ const ProductDetails = () => {
       },
     };
     console.log(subData);
-
-    await axios
-      .post(
-        "https://api-ecommerce-dev.devtomaster.com/v1/cart/addToCart",
-        subData
-      )
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    let response = await ProductDetails_services(subData).catch((error) => {
+      console.log(error);
+    });
   };
   return (
     <div className="mainProduct">
@@ -90,9 +78,12 @@ const ProductDetails = () => {
                 <div className="pd-subimg2"></div>
                 <div className="pd-subimg3"></div>
               </div>
-              {recievedData.images?.map((imgs) => (
-                <img src={imgs.img} alt="Loading" className="pd-main-img"></img>
-              ))}
+
+              <img
+                src={recievedData?.images?.map((imgssss) => imgssss?.img)}
+                alt="Loading"
+                className="pd-main-img"
+              ></img>
             </div>
             <div className="pd-parent-texts">
               <div className="child-pd-parent-texts">
@@ -102,11 +93,11 @@ const ProductDetails = () => {
                   <div className="no22">(22)</div>
                 </div>
                 <div className="pd-price1">
-                  <div className="pd-dollar1">${recievedData.price}</div>
+                  <div className="pd-dollar1">${recievedData.price / 100}</div>
                   <div className="pd-dollar2">${recievedData.offer}</div>
                 </div>
                 <div className="pd-color">Color</div>
-                <div className="pd-lorem1">{recievedData.description}</div>
+                <div className="pd-lorem1">{recievedData?.description}</div>
                 <div className="parent-pd-btn">
                   <button className="pd-btn1" onClick={handleSubmit}>
                     Add To Cart
@@ -114,7 +105,7 @@ const ProductDetails = () => {
                   <div className="pd-heart-img"></div>
                 </div>
                 <div className="pd-cate">
-                  Categories:{recievedData.category}
+                  Categories:{recievedData?.category?.catName}
                 </div>
                 <div className="pd-tags">Tags</div>
                 <div className="parent-pd-share">

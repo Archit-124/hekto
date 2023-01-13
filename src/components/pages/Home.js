@@ -140,8 +140,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="Homesec3-chairs">
             <div className="Homesec3-chair">
               <div className="Homesec3-div">
                 <div className="Homesec3-img4"> </div>
@@ -179,6 +177,10 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* <div className="Homesec3-chairs">
+            
+          </div> */}
         </div>
       </div>
       <div className="Homesec4">
@@ -358,7 +360,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget
               feugiat habitasse nec, bibendum condimentum.
             </p>
-            <p className="child-text7">
+            <div className="child-text7">
               <div>
                 <li>Material expose like metals</li>
                 <li>Simple neutral colours.</li>
@@ -367,7 +369,7 @@ const Home = () => {
                 <li>Clear lines and geomatric figures</li>
                 <li>Material expose like metals</li>
               </div>
-            </p>
+            </div>
             <button>Shop Now</button>
           </div>
           <div className="homesec7-img1"></div>

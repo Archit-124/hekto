@@ -15,7 +15,6 @@ const GrifDefault = () => {
     axios
       .get("https://api-ecommerce-dev.devtomaster.com/v1/product/getProducts")
       .then((Response) => {
-        // console.log(Response.data.result.products);
         const data1 = Response.data.result.products;
         setstoredApiData(data1);
         console.log(data1);
@@ -26,7 +25,6 @@ const GrifDefault = () => {
       });
   }, []);
 
-  // console.log(storedApiData.map((card1) => card1.productName));
   console.log(storedApiData);
 
   return (
@@ -87,7 +85,7 @@ const GrifDefault = () => {
                         >
                           <img
                             className="child1-gd-sec2-card-img"
-                            src={cardss.images[0].img}
+                            src={cardss?.images[0]?.img}
                             alt="Not Rendered"
                           ></img>
                         </div>
@@ -109,10 +107,10 @@ const GrifDefault = () => {
                           </div>
                           <div className="gd-sec2-dollars">
                             <div className="child1-gd-sec2-dollars">
-                              {cardss.price}
+                              ${cardss.price}
                             </div>
                             <div className="child2-gd-sec2-dollars">
-                              {cardss.offer}
+                              ${cardss.offer}
                             </div>
                           </div>
                         </div>

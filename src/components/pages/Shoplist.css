@@ -185,69 +185,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-.sl-sec2-card-img1 {
-  background: url("../images/Shoplist-sec2-images/img1.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 30%;
-  margin-left: 20px;
-}
-.sl-sec2-card-img2 {
-  background: url("../images/Shoplist-sec2-images/img2.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
-.sl-sec2-card-img3 {
-  background: url("../images/Shoplist-sec2-images/img3.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
-.sl-sec2-card-img4 {
-  background: url("../images/Shoplist-sec2-images/img4.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
-.sl-sec2-card-img5 {
-  background: url("../images/Shoplist-sec2-images/img5.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
-.sl-sec2-card-img6 {
-  background: url("../images/Shoplist-sec2-images/img6.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
-.sl-sec2-card-img7 {
-  background: url("../images/Shoplist-sec2-images/img7.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 217.56px;
-  width: 313.63px;
-  margin-left: 20px;
-}
+
 .sl-sec2-sidetext {
   display: flex;
   justify-content: center;

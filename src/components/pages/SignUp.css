@@ -70,6 +70,7 @@
 .su-btn:disabled {
   background-color: antiquewhite;
   color: #a89a9a;
+  cursor: auto;
 }
 .su-btn:disabled:hover {
   background-color: antiquewhite;
